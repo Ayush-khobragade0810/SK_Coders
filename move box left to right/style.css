@@ -1,0 +1,14 @@
+.box{
+	background:red;
+	width:100px;
+	height:100px;
+	display:flex;
+	justify-content:center;
+	position:absolute;
+}
+
+.btn_clas{
+	/* padding: 100px; */
+	position: relative;
+	top: 110px
+}

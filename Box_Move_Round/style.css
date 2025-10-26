@@ -1,0 +1,21 @@
+.outerBox{
+	background: black;
+	width:700px;
+	height:700px;
+	justify-content:center;
+	align-item:center;
+}
+
+.box{
+	background: red;
+	width: 100px;
+	height: 100px;
+	position: relative;
+
+}
+.btn{
+	
+	position:relative;
+	
+
+}

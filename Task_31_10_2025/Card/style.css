@@ -1,0 +1,65 @@
+body {
+    background: #f1f0ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    height: 450px;
+    width: 240px;
+    background: white;
+    border-radius: 7px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 4px gray;
+    font-size: 18px;
+    margin: 20px;
+    position: relative;
+}
+
+.button {
+    background: #51965a;
+    height: 40px;
+    width: 190px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    bottom: 15px;
+    position: relative;
+}
+
+.sale {
+    background: #e53f3f;
+    color: white;
+    height: 30px;
+    width: 60px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    position: relative;
+    top: 27px;
+    right: 10px;
+}
+
+.img {
+    top: 30px;
+    background-color: #eeeeee;
+    width: 190px;
+    border-radius: 6px;
+    overflow: hidden;
+    top: -5px;
+    position: static;
+}
+
+img {
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 10px;
+}

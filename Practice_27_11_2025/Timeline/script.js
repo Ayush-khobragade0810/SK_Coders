@@ -304,7 +304,9 @@ var CardDetails = [
 var cardList = document.getElementById("card");
 var searchInput = document.getElementById("searchInput");
 var searchButton = document.getElementById("searchButton");
+const dateInput = document.getElementById("dateInput");
 
+// search by name
 searchButton.addEventListener("click", function () {
   var filter = searchInput.value.toLowerCase();
   cardList.innerHTML = "";
@@ -325,9 +327,21 @@ searchButton.addEventListener("click", function () {
   filteredCards.forEach(cardTimeline);
 });
 
-
-
-
+// search by date
+dateInput.addEventListener("change", function () {
+  var selectedDate = new Date(this.value);
+  cardList.innerHTML = "";
+  var filteredCards = CardDetails.filter(function (card) {
+    var cardDate = new Date(card.createdAt);
+    if (cardDate.getDate() === selectedDate.getDate()) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  );
+  filteredCards.forEach(cardTimeline);
+});
 
 function cardTimeline(CardDetails) {
 

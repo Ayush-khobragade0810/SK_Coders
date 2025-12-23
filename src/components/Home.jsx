@@ -17,7 +17,7 @@ const Home = () => {
                         Full Stack Developer | MERN & Java | Secure Web Applications
                     </p>
                     <div className="mt-4">
-                        <button onClick={()=>navigate('/projects')} className="btn btn-primary me-3 px-4 py-2">View Projects</button>
+                        <button onClick={() => navigate('/projects')} className="btn btn-primary me-3 px-4 py-2">View Projects</button>
                         <button onClick={() => navigate('/about')} className="btn btn-outline-secondary text-light px-4 py-2">About Me</button>
                     </div>
                 </div>
@@ -91,15 +91,23 @@ const Home = () => {
             {/* Contact CTA */}
             <div className="row">
                 <div className="col-12">
-                    <div className="card bg-dark text-white text-center p-5">
+                    <div className="card bg-dark text-white text-center p-4 p-md-5">
                         <h2 className="mb-3">Let's Build Something Secure & Scalable</h2>
-                        <p className="mb-4">Ready to turn your ideas into reality with secure, scalable solutions.</p>
-                        <button onClick={() => navigate('/contactUs')} className="btn col-3 vstack mx-auto btn-light px-5">
+                        <p className="mb-4">
+                            Ready to turn your ideas into reality with secure, scalable solutions.
+                        </p>
+
+                        <button
+                            onClick={() => navigate('/contactUs')}
+                            className="btn btn-light px-5 mx-auto d-block d-sm-inline-block"
+                            style={{ maxWidth: "260px", width: "100%" }}
+                        >
                             Contact Me
                         </button>
                     </div>
                 </div>
             </div>
+
         </div>
     )
 }

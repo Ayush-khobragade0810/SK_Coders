@@ -10,9 +10,9 @@ const Projects = () => {
             {/* Row 1: Project 1 & 2 */}
             <div className="row mt-5 justify-content-center mb-5">
                 {/* Project 1 */}
-                <div className="col-lg-6 mb-4">
+                <div className="col-12 col-md-6 col-lg-6 mb-4">
                     <div className="card h-100">
-                        <img src={imageCompressor} className="card-img-top" alt="imageCompressor" style={{ height: "250px" }} />
+                        <img src={imageCompressor} className="card-img-top img-fluid" alt="imageCompressor" style={{ height: "250px", objectFit: "cover" }} />
                         <div className="card-body d-flex flex-column">
                             <h5 className="card-title mb-3">Image Compressor</h5>
                             <p className="card-text mb-3 flex-grow-1">
@@ -20,9 +20,9 @@ const Projects = () => {
                                 Real-world utility project demonstrating strong Java fundamentals
                             </p>
 
-                            <div className="col-lg-12 mb-3">
+                            <div className="mb-3">
                                 <span
-                                    className="border border-secondary rounded-4 width-10 p-2 me-1 text-light"
+                                    className="border border-secondary rounded-4 p-2 me-1 text-light"
                                     style={{ background: "rgba(255, 255, 255, 0.15)", borderRadius: "15px" }}>
                                     JAVA
                                 </span>
@@ -38,9 +38,9 @@ const Projects = () => {
                 </div>
 
                 {/* Project 2 */}
-                <div className="col-lg-6 mb-4">
+                <div className="col-12 col-md-6 col-lg-6 mb-4">
                     <div className="card h-100">
-                        <img src={sentimentAnalysis} className="card-img-top" alt="sentimentAnalysis" style={{ height: "250px" }} />
+                        <img src={sentimentAnalysis} className="card-img-top img-fluid" alt="sentimentAnalysis" style={{ height: "250px", objectFit: "cover" }} />
                         <div className="card-body d-flex flex-column">
                             <h5 className="card-title mb-3">Sentiment Analysis</h5>
                             <p className="card-text mb-3 flex-grow-1">
@@ -49,7 +49,7 @@ const Projects = () => {
                                 real-world use cases like reviews and social media analysis
                             </p>
 
-                            <div className="col-lg-12 mb-3">
+                            <div className="mb-3">
                                 <span className="border border-secondary rounded-4 p-2 me-1 text-light" style={{ background: "rgba(255, 255, 255, 0.15)", borderRadius: "15px" }}>Python</span>
                                 <span className="border border-secondary rounded-4 p-2 me-1 text-light" style={{ background: "rgba(255, 255, 255, 0.15)", borderRadius: "15px" }}>React</span>
                                 <span className="border border-secondary rounded-4 p-2 me-1 text-light" style={{ background: "rgba(255, 255, 255, 0.15)", borderRadius: "15px" }}>Node.js</span>
@@ -65,9 +65,9 @@ const Projects = () => {
             {/* Row 2: Project 3 & 4 */}
             <div className="row justify-content-center">
                 {/* Project 3 */}
-                <div className="col-lg-6 mb-4">
+                <div className="col-12 col-md-6 col-lg-6 mb-4">
                     <div className="card h-100">
-                        <img src={bootStrap} className="card-img-top" alt="Static Website" style={{ height: "250px" }} />
+                        <img src={bootStrap} className="card-img-top img-fluid" alt="Static Website" style={{ height: "250px", objectFit: "cover" }} />
                         <div className="card-body d-flex flex-column">
                             <h5 className="card-title mb-3">Static Website Using Bootstrap</h5>
                             <p className="card-text mb-3 flex-grow-1">
@@ -75,7 +75,7 @@ const Projects = () => {
                                 components, and utilities. Focused on responsive design, cross-device compatibility, and UI consistency
                             </p>
 
-                            <div className="col-lg-12 mb-3">
+                            <div className="mb-3">
                                 <span className="border border-secondary rounded-4 p-2 me-1 text-light" style={{ background: "rgba(255, 255, 255, 0.15)", borderRadius: "15px" }}>HTML</span>
                                 <span className="border border-secondary rounded-4 p-2 me-1 text-light" style={{ background: "rgba(255, 255, 255, 0.15)", borderRadius: "15px" }}>Bootstrap</span>
                             </div>
@@ -86,9 +86,9 @@ const Projects = () => {
                 </div>
 
                 {/* Project 4 */}
-                <div className="col-lg-6 mb-4">
+                <div className="col-12 col-md-6 col-lg-6 mb-4">
                     <div className="card h-100">
-                        <img src={calculator} className="card-img-top" alt="Calculator" style={{ height: "250px" }} />
+                        <img src={calculator} className="card-img-top img-fluid" alt="Calculator" style={{ height: "250px", objectFit: "cover" }} />
                         <div className="card-body d-flex flex-column">
                             <h5 className="card-title mb-3">Calculator</h5>
                             <p className="card-text mb-3 flex-grow-1">
@@ -97,7 +97,7 @@ const Projects = () => {
                                 Focused on clean UI, responsive layout, and accurate calculation logic
                             </p>
 
-                            <div className="col-lg-12 mb-3">
+                            <div className="mb-3">
                                 <span className="border border-secondary rounded-4 p-2 me-1 text-light" style={{ background: "rgba(255, 255, 255, 0.15)", borderRadius: "15px" }}>HTML</span>
                                 <span className="border border-secondary rounded-4 p-2 me-1 text-light" style={{ background: "rgba(255, 255, 255, 0.15)", borderRadius: "15px" }}>CSS</span>
                                 <span className="border border-secondary rounded-4 p-2 me-1 text-light" style={{ background: "rgba(255, 255, 255, 0.15)", borderRadius: "15px" }}>JavaScript</span>

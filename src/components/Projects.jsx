@@ -5,7 +5,7 @@ import bootStrap from '../assets/Bootstrap.png';
 
 const Projects = () => {
     return (
-        <div className="container mt-5 pt-5">
+        <div className="container pt-5">
 
             {/* Row 1: Project 1 & 2 */}
             <div className="row mt-5 justify-content-center mb-5">

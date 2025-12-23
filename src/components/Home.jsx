@@ -6,7 +6,7 @@ const Home = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="container mt-5 pt-5">
+        <div className="container pt-5">
             {/* Hero Section */}
             <div className="row align-items-center mt-3 mb-5">
                 <div className="col-12 text-center">

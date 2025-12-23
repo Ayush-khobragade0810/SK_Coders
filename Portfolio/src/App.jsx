@@ -1,11 +1,11 @@
 import { Routes, Route, HashRouter } from 'react-router-dom'
 
 // Import components
-import NavBar from './components/navBar.jsx';
-import About from './components/About.jsx';
-import ContactUs from './components/contactUs.jsx';
-import Home from './components/Home.jsx';
-import Projects from './components/Projects.jsx';
+import NavBar from '../src/components/navBar.jsx';
+import About from '../src/components/About.jsx';
+import ContactUs from '../src/components/contactUs.jsx';
+import Home from '../src/components/Home.jsx';
+import Projects from '../src/components/Projects.jsx';
 
 import './App.css'
 

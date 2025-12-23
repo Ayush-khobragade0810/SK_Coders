@@ -1,0 +1,31 @@
+.mainContainer {
+    position: relative;
+    /* max-width: 90%; */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-fluid {
+    height: 100px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+}
+
+.navbar {
+    background: linear-gradient(135deg, #6b73ff, #7f53ac);
+}
+
+.nav-link {
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+img {
+    background: #8481ee;
+    color: white;
+}

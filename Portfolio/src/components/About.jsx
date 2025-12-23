@@ -2,7 +2,7 @@ import MyProfile from '../assets/myProfile.jpg';
 
 const About = () => {
     return (
-        <div className='container mt-5'>
+        <div className='container'>
 
             <div className="row mb-4">
 

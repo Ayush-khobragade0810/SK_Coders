@@ -29,3 +29,39 @@ img {
     background: #8481ee;
     color: white;
 }
+
+/* Navbar.css */
+.mobile-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: inherit;
+    z-index: 1000;
+}
+
+.mobile-menu.show {
+    max-height: 300px; /* Adjust based on your content */
+}
+
+/* Ensure navbar has relative positioning for absolute dropdown */
+.navbar {
+    position: relative;
+}
+
+/* Optional: Add a shadow to the dropdown */
+.mobile-menu .navbar-nav {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 576px) {
+    .navbar {
+        width: 100% !important;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

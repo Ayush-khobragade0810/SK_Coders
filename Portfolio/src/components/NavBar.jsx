@@ -5,11 +5,24 @@ import './Navbar.css';
 const NavBar = () => {
 
     const navigate = useNavigate();
+
     return (
-        <nav className="navbar mainContainern navbar-expand-sm bg-body-tertiary w-80 fixed-top mt-1 container-fluid justify-content-center" style={{width: "97%", paddingTop: "10px", paddingBottom: "10px", margin: "0 auto", left: "0", right: "0"}}>
-            <div className="container-fluid">
+        <nav
+            className="navbar mainContainern navbar-expand-md bg-body-tertiary fixed-top mt-1"
+            style={{
+                width: "97%",
+                paddingTop: "10px",
+                paddingBottom: "10px",
+                margin: "0 auto",
+                left: "0",
+                right: "0"
+            }}
+        >
+            <div className="container-fluid px-2">
 
                  <img src={Logo} alt="Logo" className="img-fluid" onClick={() => navigate("/home")} style={{ height: "100px", cursor: 'pointer' }} />
+                {/* Wrapper */}
+                <div className="d-flex flex-column flex-md-row align-items-center justify-content-between w-100">
 
                 <div className="navbar-nav">
                     <Link to="/home" className="nav-link">Home</Link>
@@ -17,10 +30,30 @@ const NavBar = () => {
                     <Link to="/projects" className="nav-link">Projects</Link>
                     <Link to="/contactUs" className="nav-link">Contact Us</Link>
                 </div>
+                    {/* Logo */}
+                    <img
+                        src={Logo}
+                        alt="Logo"
+                        className="img-fluid mb-2 mb-md-0"
+                        onClick={() => navigate("/home")}
+                        style={{
+                            height: "70px",
+                            cursor: "pointer"
+                        }}
+                    />
 
+                    {/* Nav Links */}
+                    <div className="navbar-nav d-flex flex-row flex-wrap justify-content-center w-100 w-md-auto">
+                        <Link to="/home" className="nav-link px-2 py-1">Home</Link>
+                        <Link to="/about" className="nav-link px-2 py-1">About</Link>
+                        <Link to="/projects" className="nav-link px-2 py-1">Projects</Link>
+                        <Link to="/contactUs" className="nav-link px-2 py-1">Contact Us</Link>
+                    </div>
+
+                </div>
             </div>
         </nav>
+    );
+};
 
-    )
-}
 export default NavBar;

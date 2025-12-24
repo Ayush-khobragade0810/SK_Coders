@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container d-flex flex-column justify-content-center shadow p-3 mb-5 rounded mt-5 bg-warning"
+        style="width: 400px;">
+
+        <div class="inputCombine">
+            <div class="input1 mb-3 mt-3">
+                <input id="input1" class="form-control" type="text" placeholder="Enter Number" style="width: 100%;">
+            </div>
+            <div class="input2 mb-3">
+                <input id="input2" class="form-control" type="text" placeholder="Enter Number">
+            </div>
+            <div class="input3 mb-3">
+                <input id="input3" class="form-control" type="text" placeholder="Operator" readonly>
+            </div>
+            <div class="input4 mb-3">
+                <input id="input4" class="form-control" type="text" placeholder="Result" readonly>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col mb-3" style=" position: relative;">
+                <button class="btn col-3 mb-3 btn-primary">1</button>
+                <button class="btn col-3 mb-3 btn-primary">2</button>
+                <button class="btn col-3 mb-3 btn-primary">3</button>
+                <button class="btn col-3 mb-3 btn-primary">4</button>
+                <button class="btn col-3 mb-3 btn-primary">5</button>
+                <button class="btn col-3 mb-3 btn-primary">6</button>
+                <button class="btn col-3 mb-3 btn-primary">7</button>
+                <button class="btn col-3 mb-3 btn-primary">8</button>
+                <button class="btn col-3 mb-3 btn-primary">9</button>
+                <button class="btn col-3 mb-3 btn-primary" style="width: 78%;">0</button>
+            </div>
+
+            <div class="operation row mb-3 position-relative align-items-center justify-content-center d-flex gap-2"
+                style="align-items: end;">
+                <button class="btn col-2 btn-primary text-light border-0" id="addButton">+</button>
+                <button class="btn col-2 btn-primary text-light border-0" id="subButton">-</button>
+                <button class="btn col-2 btn-primary text-light border-0" id="mulButton">*</button>
+                <button class="btn col-2 btn-primary text-light border-0" id="divButton">/</button>
+                <button class="btn col-2 btn-primary text-light border-0" id="eqButton">=</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- script.js -->
+    <script src="script.js"></script>
+</body>
+
+</html>

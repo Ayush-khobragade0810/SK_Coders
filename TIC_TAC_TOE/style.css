@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+     margin: 0;
+    padding: 0;
+}
+
+.info{
+    font-size: 20px;
+}
+.gameContainer{
+    
+    display: flex;
+     flex-direction: column; /*Make children stack vertically */
+    justify-content: center; /* Push items to top and bottom */
+    margin-top: 10px;
+     height: 90vh; /* Set a height so flex knows how to space items */
+    text-align: center; 
+    
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}
+
+.box{
+    border: 2px solid;
+    font-size: 8vw;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+
+.gameInfo{
+    padding: 0 34px;
+    margin-top: 34px
+}

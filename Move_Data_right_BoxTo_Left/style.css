@@ -1,0 +1,24 @@
+.rightBox {
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    position: relative;
+    left: 70%;
+}
+
+.leftBox {
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    position: relative;
+    bottom: 300px;
+}
+
+.moveButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 500px;
+    gap: 10px;
+}
